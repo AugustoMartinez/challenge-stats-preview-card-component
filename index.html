@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   	<meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+	<link rel="stylesheet" href="./css/style.css">	
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 	
 	<title>Frontend Mentor | Stats preview card component</title>
-
+	
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	<style>
 		.attribution { font-size: 11px; text-align: center; }
@@ -16,28 +17,28 @@
 </head>
 <body>
 	<main>
-		<div>
-		<div>
-			<h2>Get <span>insights</span> that help your bussines grow</h2>
-			<p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency</p>
-			<div>
-				<div>
-					<h4>10k+</h4>
-					<p>COMPANIES</p>
-				</div>
-				<div>
-					<h4>314</h4>
-					<p>TEMPLATE</p>
-				</div>
-				<div>
-					<h4>12M+</h4>
-					<p>QUERIES</p>
+		<div class="card">
+			<div class="card-section-1">
+				<h2 class="card-title">Get <span class="text-purple">insights</span> that help your bussines grow</h2>
+				<p class="card-paragraph">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency</p>
+				<div class="card-section-1-stats">
+					<div class="stats">
+						<h4 class="stats-count">10k+</h4>
+						<p class="stats-text">COMPANIES</p>
+					</div>
+					<div class="stats">
+						<h4 class="stats-count">314</h4>
+						<p class="stats-text">TEMPLATE</p>
+					</div>
+					<div class="stats">
+						<h4 class="stats-count">12M+</h4>
+						<p class="stats-text">QUERIES</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div>
-			<img src="./images/image-header-desktop.jpg" alt="imagen referencial">
-		</div>
+			<div class="card-section-2">
+				<img src="./images/image-header-desktop.jpg" alt="imagen referencial">
+			</div>
 		</div>
 	</main>
 	<div class="attribution">
