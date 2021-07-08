@@ -16,19 +16,25 @@ body{
     background: var(--fondo-main);
     margin: 0;
 }
-
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
 .card{
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 .card-section-1{
     background: var(--fondo-tarjeta);
-    padding: 70px;
+    padding: 70.5px;
     display: flex;
     flex-direction: column;
+    min-width: 300px;
     max-width: 600px;
     box-sizing: border-box;
     border-top-left-radius: 10px;
@@ -41,35 +47,51 @@ body{
     font-weight: 700;
 }
 
-.card-paragraph{
-    color: var(--color-texto-secundario);
-    font-family: 'Inter', monospace;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.card-section-1-stats{
-    display: flex;
-}
-.stats-text{
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    color: var(--color-texto-terceario);
-}
-
-.text-purple{
-    color: var(--morado);
-}
-
 .card-title{
     font-size: 2.4rem;
     margin: 0;
     margin-bottom: 5px;
 }
 .title-part{
-    display: block;
+    display: inline-block;
 }
+
+.card-paragraph{
+    color: var(--color-texto-secundario);
+    font-family: 'Inter', monospace;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    padding-right: 20px;
+    margin-bottom: 70px;
+}
+
+.card-section-1-stats{
+    display: flex;
+}
+
+.stats{
+    margin: 0 80px 0 4px;
+}
+
+.stats-text{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    color: var(--color-texto-terceario);
+    margin: 3px 0;
+    font-size: .9rem;
+}
+
+.stats-count{
+    margin: 3px 0;
+    font-size: 1.5rem;
+}
+
+
+.text-purple{
+    color: var(--morado);
+}
+
 .card-section-2{
     background-image: url("../images/image-header-desktop.jpg");
     background-color: var(--morado);
@@ -77,10 +99,32 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-    max-height: 439.53px;
+    width: 540px;
+    min-width: 270px;
+    height: 456px;
+    min-height: 278px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+@media screen and (max-width: 1400px){
+    .card{
+        margin: 30px 20px;
+    }
+    .card-section-1{
+        width: 100%;
+        height: 100%;
+        order: 2;
+    }
+    .card-section-2{
+        background-image: url("../images/image-header-mobile.jpg");
+        background-color: var(--morado);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        order: 1;
+    }
 }
