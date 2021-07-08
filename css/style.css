@@ -14,10 +14,25 @@
 }
 body{
     background: var(--fondo-main);
+    margin: 0;
 }
 
+.card{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .card-section-1{
     background: var(--fondo-tarjeta);
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .card-title, .stats-count{
@@ -30,8 +45,13 @@ body{
     color: var(--color-texto-secundario);
     font-family: 'Inter', monospace;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
+.card-section-1-stats{
+    display: flex;
+}
 .stats-text{
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
@@ -40,4 +60,27 @@ body{
 
 .text-purple{
     color: var(--morado);
+}
+
+.card-title{
+    font-size: 2.4rem;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.title-part{
+    display: block;
+}
+.card-section-2{
+    background-image: url("../images/image-header-desktop.jpg");
+    background-color: var(--morado);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 439.53px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
